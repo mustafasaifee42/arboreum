@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dr Mack Ramachandran",
+    "position": "Senior Advisor",
+    "description":"Mack is an entrepreneur and an early carbon offset business owner with over 25 years of experience building community programs in developing countries for emergency relief and long-term sustainability. As a prior Chief of Supply Chain Planning at the UN World Food Programme, his expertise is on large-scale project management in developing countries and leveraging markets and technology for greater good. Over the course of his career, he has worked in Cambodia, DPR Korea, Sudan, and Zimbabwe, amongst other places, and he holds a PhD in Economics from Clark University.",
+    "linkedin":"https://www.linkedin.com/in/mahamack/",
+    "photo":"./assets/imgs/MR.jpg"
+  },
+  {
+    "name": "Dr Avinash Bhardwaj",
+    "position": "Technical Advisor",
+    "description":"Avinash is a member of the faculty at IIT - Bombay. Prior to joining IITB, he worked at the Center for Operations Research and Econometrics, UC Louvain, Belgium and the H. Milton Stewart School of Industrial and Systems Engineering at the Georgia Institute of Technology. He holds a PhD from the University of California Berkeley, and his primary research interests span the areas of conic integer programming, polyhedral combinatorics, polyhedral cutting planes for mixed-integer programming with particular applications in large scale optimization and optimization under uncertainty.",
+    "photo":"./assets/imgs/AB.jpg"
+  },
+  {
+    "name": "Shubham Sandeep",
+    "position": "Comercial Advisor",
+    "description":"Shubham is a member of the 2019 Forbes 30 Under 30 cohort for Manufacturing & Industry, and the CCO of Skytree, a spin-off of the European Space Agency that builds carbon dioxide extraction products for automobiles and buildings. With a focus on investment banking, clean-tech, mobility and consumer technology, he previously co-founded one of the first rooftop solar ventures in India and exited to a rooftop solar platform backed by US private equity fund I Squared Capital. He is an active angel investor and a mentor with Techstars 'Smart City' program in Amsterdam. He holds a BTech in Electrical Engineering from the India Institute of Technology - Delhi.",
+    "linkedin":"https://nl.linkedin.com/in/shubham-sandeep-2980b416",
+    "photo":"./assets/imgs/SS.jpg"
+  }
+]

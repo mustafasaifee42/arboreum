@@ -21,9 +21,18 @@ const DivContainer = styled.div`
   }
 `;
 
+const P = styled.p`
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 20px;
+`;
+
 const Map: React.FunctionComponent<{}> = () => {
   return (
     <PartnerStrip>
+      <P>Powering next generation of FinTech</P>
       <DivContainer>
         <img src="./assets/imgs/FpMainLogo.png" width="auto" alt="FP Logo" />
         <img src="./assets/imgs/FpMainLogo.png" width="auto" alt="FP Logo" />

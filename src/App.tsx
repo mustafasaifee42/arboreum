@@ -1,10 +1,12 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import Header from "./Header";
+import Announcement from "./Announcement";
 import Hero from "./Hero";
 import PartnerStrip from "./PartnerStrip";
 import Section from "./Section";
 import HowItWorks from "./HowItWorks";
+import Partnerships from "./Partnerships";
 import Team from "./Team";
 import LearnMore from "./LearnMore";
 import Footer from "./Footer";
@@ -61,10 +63,12 @@ function App() {
     <AppContainer>
       <GlobalStyles />
       <Header />
+      <Announcement />
       <Hero />
       <PartnerStrip />
-      <Section imagePos="right" />
+      <Section />
       <HowItWorks />
+      <Partnerships />
       <Team />
       <LearnMore />
       <Footer />

@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import YouTube from "react-youtube";
+import Icon from "./assets/imgs/fractalIcon.svg";
 
 const DivContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: 1440px;
-  padding: 100px 20px;
+  padding: 80px 20px 100px 20px;
 `;
 
 const TitleContainer = styled.div`
@@ -14,103 +16,59 @@ const TitleContainer = styled.div`
   max-width: 720px;
 `;
 
-const ContentContainer = styled.div`
+const LogoImage = styled.img`
+  height: 42px;
+  width: auto;
+  margin: auto;
+`;
+
+const IconConatiner = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin: 20px 0;
 `;
 
-const TextContainer = styled.div<{ imagePosition: string }>`
-  margin: ${(props: { imagePosition: string }) =>
-    props.imagePosition === "right" ? "0 40px 0 0" : "0 0 0 40px"};
-  max-width: 420px;
+const VideoConatiner = styled.div`
+  padding: 20px 40px 40px 40px;
+  border-radius: 5px;
+  width: max-content;
+  margin: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.11);
 `;
 
-const ImageContainer = styled.div<{ imagePosition: string }>`
-  width: 50%;
-  max-width: 720px;
-  margin: ${(props: { imagePosition: string }) =>
-    props.imagePosition === "right" ? "0 0 0 40px" : "0 40px 0 0"};
+const H3 = styled.h3`
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 20px 0;
 `;
 
-const ButtonBlock = styled.div`
-  display: flex;
-  div {
-    margin: 0 10px 0 0;
-  }
-`;
-const Button = styled.div`
-  display: flex;
-  font-size: 16px;
-  padding: 10px 30px;
-  border-radius: 50px;
-  color: #fff;
-  background-color: #ed135a;
-  box-shadow: 0 0px 10px -3px rgba(0, 0, 0, 0.4);
-`;
-
-const Map: React.FunctionComponent<{ imagePos: string }> = (props) => {
+const Map: React.FunctionComponent<{}> = () => {
+  const opts: any = {
+    height: "520",
+    width: "960",
+    playerVars: {
+      autoplay: 0,
+    },
+  };
   return (
     <DivContainer>
+      <IconConatiner>
+        <LogoImage src={Icon} alt="Fractal Lending Icon" />
+      </IconConatiner>
       <TitleContainer>
-        <h1>Decentralising Peer to Peer Lending</h1>
+        <h1>World’s first fractal lending technology</h1>
         <h3>
-          Leading the way in combining machine learning, swarm intelligence, and
-          distributed ledger technology to create the first decentralised,
-          many-to-many credit networks
+          Through fractal lending, borrowing, and underwriting, we spread loan
+          risk across networks of businesses or individuals. As every lender’s
+          risk lowers, it becomes easier for financially marginalized borrowers
+          to access credit. Long chains of people in the network help credit
+          move farther
         </h3>
       </TitleContainer>
-      <ContentContainer>
-        {props.imagePos === "right" ? (
-          <>
-            <TextContainer imagePosition={props.imagePos}>
-              <p>
-                We're empowering individuals to assess risk, give and receive
-                loans, and earn interest on savings, without relying on banks or
-                other financial intermediaries.
-              </p>
-              <p>
-                We're working towards creating micro-credit grids for
-                financially underserved communities via trust networks.
-              </p>
-              <ButtonBlock>
-                <Button>Pitch Deck</Button>
-              </ButtonBlock>
-            </TextContainer>
-            <ImageContainer imagePosition={props.imagePos}>
-              <img
-                src="./assets/imgs/AdobeStock_236666680_Preview.jpg"
-                width="100%"
-                alt="Peer to peer lending graphic"
-              />
-            </ImageContainer>
-          </>
-        ) : (
-          <>
-            <ImageContainer imagePosition={props.imagePos}>
-              <img
-                src="./assets/imgs/AdobeStock_236666680_Preview.jpg"
-                width="100%"
-                alt="Peer to peer lending graphic"
-              />
-            </ImageContainer>
-            <TextContainer imagePosition={props.imagePos}>
-              <p>
-                We're empowering individuals to assess risk, give and receive
-                loans, and earn interest on savings, without relying on banks or
-                other financial intermediaries.
-              </p>
-              <p>
-                We're working towards creating micro-credit grids for
-                financially underserved communities via trust networks.
-              </p>
-              <ButtonBlock>
-                <Button>Pitch Deck</Button>
-              </ButtonBlock>
-            </TextContainer>
-          </>
-        )}
-      </ContentContainer>
+      <VideoConatiner>
+        <H3>See how it works</H3>
+        <YouTube videoId="WzBimNSO-U8" opts={opts} />
+      </VideoConatiner>
     </DivContainer>
   );
 };

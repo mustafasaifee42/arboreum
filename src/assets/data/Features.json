@@ -1,0 +1,31 @@
+[{
+    "title": "Near zero transaction fee",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "icon": "./assets/imgs/featureIcons/feature1.svg"
+  },
+  {
+    "title": "High collaterals on loans",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "icon": "./assets/imgs/featureIcons/feature2.svg"
+  },
+  {
+    "title": "Best risk-adjusted returns",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "icon": "./assets/imgs/featureIcons/feature3.svg"
+  },
+  {
+    "title": "Strong enforcement mechanism",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "icon": "./assets/imgs/featureIcons/feature4.svg"
+  },
+  {
+    "title": "Easy to use",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "icon": "./assets/imgs/featureIcons/feature5.svg"
+  },
+  {
+    "title": "Diversified portfolio",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "icon": "./assets/imgs/featureIcons/feature6.svg"
+  }
+]

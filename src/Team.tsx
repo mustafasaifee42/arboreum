@@ -15,40 +15,45 @@ interface members {
 const HowItworksContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  background-color: #fff;
+  background-color: #fafafa;
 `;
 
 const DivContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
-  padding: 100px 20px;
+  max-width: 1272px;
+  padding: 120px 20px 50px 20px;
 `;
 
 const TitleContainer = styled.div`
-  margin: 0 auto 100px auto;
-  text-align: center;
-  max-width: 720px;
+  margin: 0 auto 40px auto;
 `;
 
 const ContentContainer = styled.div`
   width: 100%;
-  margin: 90px 0 0 0;
+  flex-wrap: wrap;
+`;
+
+const TitleOutline = styled.div`
+  width: 75px;
+  height: 3px;
+  background-color: #ed135a;
+  margin: 20px 0;
 `;
 
 const H4 = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-weight: bold;
-  text-align: center;
-  font-size: 28px;
+  font-size: 20px;
 `;
 
 const TeamContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
@@ -81,8 +86,9 @@ const Map: React.FunctionComponent<{}> = () => {
       <DivContainer>
         <TitleContainer>
           <h1>A Team of Experts</h1>
+          <TitleOutline />
           <h3>
-            Arboreum leadership team brings years of experience in economics,
+            Arboreum leadership team brings years of experience in economics,
             data science, blockchain technology and management consultancy
           </h3>
         </TitleContainer>

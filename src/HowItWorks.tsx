@@ -1,5 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
+import Features from "./assets/data/Features.json";
+import FeatureCard from "./FeatureCard";
+
+interface feature {
+  title: string;
+  description: string;
+  icon: string;
+}
 
 const HowItworksContainer = styled.div`
   margin: 0 auto;
@@ -10,94 +18,51 @@ const HowItworksContainer = styled.div`
 const DivContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  max-width: 1440px;
-  padding: 100px 20px;
+  max-width: 1272px;
+  padding: 120px 20px;
 `;
 
 const TitleContainer = styled.div`
-  margin: 0 auto 100px auto;
-  text-align: center;
-  max-width: 720px;
+  margin: 0 auto 40px auto;
 `;
 
 const ContentContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
+  align-items: stretch;
 `;
 
-const ListContainer = styled.div<{ imagePosition: string }>`
-  margin: 30px 0 0 0;
-  width: 30%;
-  max-width: 320px;
-  box-shadow: 0 0px 13px -3px rgba(0, 0, 0, 0.2);
-`;
-
-const ListItems = styled.div<{ selected: boolean }>`
-  padding: 25px 15px;
-  position: relative;
-  font-size: 16px;
-  border-left: ${(props: { selected: boolean }) =>
-    props.selected ? "4px solid #ed135a" : "4px solid #fafafa"};
-  border-bottom: 1px solid #eee;
-  background-color: ${(props: { selected: boolean }) =>
-    props.selected ? "#fff" : "#fafafa"};
-  z-index: 10;
-`;
-
-const SliderContainer = styled.div<{ imagePosition: string }>`
-  width: 70%;
-  max-width: calc(100% - 320px);
-  background-color: #fff;
-  height: 500px;
-  box-shadow: 0 0px 13px -3px rgba(0, 0, 0, 0.2);
+const TitleOutline = styled.div`
+  width: 75px;
+  height: 3px;
+  background-color: #ed135a;
+  margin: 20px 0;
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
-  const [selectedStep, setSelectedStep] = useState(1);
+  let feartureCard = Features.map((d: feature, i: number) => {
+    return (
+      <FeatureCard
+        title={d.title}
+        description={d.description}
+        icon={d.icon}
+        key={i}
+      />
+    );
+  });
   return (
     <HowItworksContainer>
       <DivContainer>
         <TitleContainer>
-          <h1>How It Works</h1>
-          <h3>
-            We combine machine learning, swarm intelligence, and distributed
-            ledger technology to distribute loans amongst trustors
-          </h3>
+          <h1>
+            Leverage our Technology to Create Cheaper, Faster {"&"} Safer Loans
+          </h1>
+          <TitleOutline />
         </TitleContainer>
-        <ContentContainer>
-          <ListContainer>
-            <ListItems
-              selected={selectedStep === 1 ? true : false}
-              onClick={() => {
-                setSelectedStep(1);
-              }}
-            >
-              <div className="bold">Step 1</div>
-              <div>Launch and manage your network</div>
-            </ListItems>
-            <ListItems
-              selected={selectedStep === 2 ? true : false}
-              onClick={() => {
-                setSelectedStep(2);
-              }}
-            >
-              <div className="bold">Step 2</div>
-              <div>Launch and manage your network</div>
-            </ListItems>
-            <ListItems
-              selected={selectedStep === 3 ? true : false}
-              onClick={() => {
-                setSelectedStep(3);
-              }}
-            >
-              <div className="bold">Step 3</div>
-              <div>Launch and manage your network</div>
-            </ListItems>
-          </ListContainer>
-          <SliderContainer></SliderContainer>
-        </ContentContainer>
+        <ContentContainer>{feartureCard}</ContentContainer>
       </DivContainer>
     </HowItworksContainer>
   );

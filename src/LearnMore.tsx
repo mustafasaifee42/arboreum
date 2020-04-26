@@ -4,12 +4,12 @@ import styled from "styled-components";
 const DivContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  background-color: #fafafa;
-  padding: 50px 0 0 0;
+  background-color: #fff;
+  padding: 100px 0 0 0;
 `;
 
 const CardContainer = styled.div`
-  margin: 50px 0;
+  margin: 25px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -19,8 +19,8 @@ const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 70px 0;
-  padding: 0 20px;
+  padding: 40px 20px;
+  background-color: #fafafa;
 `;
 
 const Card = styled.div`
@@ -45,9 +45,11 @@ const CardContent = styled.div`
   margin-top: -25px;
   padding: 40px 20px 20px 20px;
   background-color: #fff;
+  font-size: 18px;
+  color: #999;
   box-shadow: 0 0px 13px -3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  height: 150px;
+  height: 70px;
 `;
 
 const H2 = styled.h2`
@@ -57,7 +59,7 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h3`
-  font-size:24px;
+  font-size: 24px;
   margin-top: 5px;
   margin-bottom: 0;
 `;

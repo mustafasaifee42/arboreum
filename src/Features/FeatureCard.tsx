@@ -18,6 +18,7 @@ const ImageContainer = styled.div`
   height: 70px;
   flex-shrink: 0;
 `;
+
 const H3 = styled.h3`
   font-weight: bold;
   margin: 0;

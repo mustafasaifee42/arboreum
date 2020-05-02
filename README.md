@@ -100,7 +100,7 @@ If you working on the master branch locally
 
 #### Announcement
 
-To edit or change the announcement bar at the top edit the [`copy.json`](./src/Announecement/assets/data/copy.json) in [`./src/Announecement/assets/data`](./src/Announecement/assets/data)
+To edit or change the announcement bar at the top edit the [`copy.json`](./src/Announcement/assets/data/copy.json) in [`./src/Announecement/assets/data`](./src/Announcement/assets/data)
 
 **Data Structure**
 

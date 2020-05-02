@@ -8,6 +8,8 @@ To see the full documentation regarding that, go [here](https://github.com/faceb
 
 ## Installation
 
+### Using `yarn`
+
 This project uses `yarn`. Install it as described here [https://yarnpkg.com/lang/en/](https://yarnpkg.com/lang/en/) if you haven't already.
 
 To install this project, simply clone the repo and run `yarn`;
@@ -20,11 +22,31 @@ e.g.
 
 This will install all the dependencies for the project locally.
 
+### Using `npm`
+
+You can also use `npm`. Install it as described here [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm), if you dont have it already.
+
+To install this project, simply clone the repo and run `npm install`;
+
+e.g.
+
+    git clone https://github.com/mustafasaifee42/arboreum.git
+    cd arboreum
+    npm install
+
+This will install all the dependencies for the project locally.
+
 ## Local Development
 
 In the project directory, you can run:
 
 ### `yarn start`
+(if using yarn)
+
+or
+
+### `npm run start`
+(if using npm)
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

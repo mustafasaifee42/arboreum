@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import TeamCard from "./TeamCard";
-import TeamMembers from "./assets/data/Team.json";
-import Advisory from "./assets/data/Advisory.json";
+import TeamMembers from "./assets/data/team.json";
+import Advisory from "./assets/data/advisory.json";
 
 interface members {
   name: string;

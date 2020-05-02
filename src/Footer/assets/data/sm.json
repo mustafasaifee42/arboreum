@@ -1,0 +1,11 @@
+[{
+    "socialMedia": "Linkedin",
+    "icon": "./assets/imgs/SMIcons/Linkedin.svg",
+    "link": "https://www.linkedin.com/company/arboreum-finance?trk=similar-pages_result-card_full-click"
+  },
+  {
+    "socialMedia": "Twitter",
+    "icon": "./assets/imgs/SMIcons/Twitter.svg",
+    "link": "https://twitter.com/ArboreumFinance"
+  }
+]

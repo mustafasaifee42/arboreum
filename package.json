@@ -13,6 +13,7 @@
     "react-dom": "^16.13.1",
     "react-md-file": "^2.0.0",
     "react-scripts": "3.4.1",
+    "react-scroll": "^1.7.16",
     "react-youtube": "^7.11.2",
     "styled-components": "^5.1.0",
     "typescript": "~3.7.2"

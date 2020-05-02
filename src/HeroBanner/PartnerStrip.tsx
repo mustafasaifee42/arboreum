@@ -1,5 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import PartnersData from "./assets/data/partners.json";
+
+interface partnerData {
+  link: string;
+  altText: string;
+  logo: string;
+}
 
 const PartnerStrip = styled.div`
   margin: 0 auto;
@@ -30,14 +37,17 @@ const P = styled.p`
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
+  const partners = PartnersData.map((d: partnerData, i: number) => {
+    return (
+      <a href={d.link} target="_blank" rel="noopener noreferrer" key={i}>
+        <img src={d.logo} width="auto" alt={d.altText} />
+      </a>
+    );
+  });
   return (
     <PartnerStrip>
       <P>Powering next generation of FinTech</P>
-      <DivContainer>
-        <img src="./assets/imgs/FpMainLogo.png" width="auto" alt="FP Logo" />
-        <img src="./assets/imgs/FpMainLogo.png" width="auto" alt="FP Logo" />
-        <img src="./assets/imgs/FpMainLogo.png" width="auto" alt="FP Logo" />
-      </DivContainer>
+      <DivContainer>{partners}</DivContainer>
     </PartnerStrip>
   );
 };

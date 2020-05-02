@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Features from "./assets/data/Features.json";
+import Features from "./assets/data/copy.json";
 import FeatureCard from "./FeatureCard";
 
 interface feature {

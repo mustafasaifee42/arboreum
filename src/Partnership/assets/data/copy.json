@@ -1,0 +1,16 @@
+[{
+        "title": "Inter-network Lending",
+        "description": "Enabling borrowing for individuals or micro, small, medium enterprises from their own communities",
+        "image": "./assets/imgs/partnershipImages/01.png"
+    },
+    {
+        "title": "Institution-network lending",
+        "description": "Enabling borrowing of larger and/ or safer loans from institutional lenders by leveraging network as guarantor",
+        "image": "./assets/imgs/partnershipImages/02.png"
+    },
+    {
+        "title": "Business network lending",
+        "description": "Enabling purchase of goods and products on loan from seller against instalment-based payment",
+        "image": "./assets/imgs/partnershipImages/03.png"
+    }
+]

@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import Motif from "./assets/imgs/motif";
+import PartnerStrip from "./PartnerStrip";
+import Motif from "./motif";
 
 let canvasNode: any;
-
-interface ButtonProps {
-  type: string;
-}
 
 interface BGProps {
   height: number;
@@ -31,30 +28,30 @@ const DivContainer = styled.div<BGProps>`
 
 const TextContainer = styled.div`
   margin: 0 40px 0 0;
-  max-width: 640px;
 `;
 
 const ButtonBlock = styled.div`
   display: flex;
   justify-content: center;
 `;
-const Button = styled.div<ButtonProps>`
+const Button = styled.div`
   display: flex;
   font-size: 16px;
   padding: 10px 30px;
   border-radius: 50px;
-  border: ${(props: ButtonProps) =>
-    props.type === "Primary" ? "none" : "1px solid #ed135a"};
-  color: ${(props: ButtonProps) =>
-    props.type === "Primary" ? "#fff" : "#ed135a"};
-  background-color: ${(props: ButtonProps) =>
-    props.type === "Primary" ? "#ed135a" : "#fff"};
+  border: 1px solid #ed135a;
+  color: #ed135a;
+  background-color: #fff;
   box-shadow: 0 0px 10px -3px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+  &:hover {
+    color: #fff;
+    background-color: #ed135a;
+  }
 `;
 
 const H1 = styled.h1`
   color: #ffffff;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 `;
@@ -62,7 +59,10 @@ const H1 = styled.h1`
 const H3 = styled.h3`
   color: #ffffff;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px auto 20px auto;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  max-width: 720px;
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
@@ -139,22 +139,31 @@ const Map: React.FunctionComponent<{}> = () => {
     }, 50);
   });
   return (
-    <DivBG id="heroBanner">
-      <canvas ref={(node) => (canvasNode = node)} />
-      <DivContainer height={582}>
-        <TextContainer>
-          <H1>Grow your business with network lending</H1>
-          <Motif fillColor="#fff" />
-          <H3>
-            Arboreum enables new, network-based credit access solutions that
-            empower the financially underserved
-          </H3>
-          <ButtonBlock>
-            <Button type="Secondary">Request Demo</Button>
-          </ButtonBlock>
-        </TextContainer>
-      </DivContainer>
-    </DivBG>
+    <>
+      <DivBG id="heroBanner">
+        <canvas ref={(node) => (canvasNode = node)} />
+        <DivContainer height={582}>
+          <TextContainer>
+            <H1>Grow your business with network lending</H1>
+            <Motif fillColor="#fff" />
+            <H3>
+              Arboreum enables new, network-based credit access solutions that
+              empower the financially underserved
+            </H3>
+            <ButtonBlock>
+              <a
+                href="mailto:gaurav@arboreum.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>Request Demo</Button>
+              </a>
+            </ButtonBlock>
+          </TextContainer>
+        </DivContainer>
+      </DivBG>
+      <PartnerStrip />
+    </>
   );
 };
 

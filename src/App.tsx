@@ -1,19 +1,18 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import Header from "./Header";
-import Announcement from "./Announcement";
-import Hero from "./Hero";
-import PartnerStrip from "./PartnerStrip";
-import Section from "./Section";
-import HowItWorks from "./HowItWorks";
-import Partnerships from "./Partnerships";
-import Team from "./Team";
-import LearnMore from "./LearnMore";
-import Footer from "./Footer";
+import { Element } from "react-scroll";
+import Header from "./Header/";
+import Announcement from "./Announcement/";
+import HeroBanner from "./HeroBanner/";
+import ProductIntro from "./ProductIntro/";
+import Features from "./Features/";
+import Partnership from "./Partnership/";
+import Team from "./Team/";
+import Footer from "./Footer/";
 
 const GlobalStyles = createGlobalStyle`
   body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     font-size: 16px;
     color:#252D44;
@@ -22,7 +21,8 @@ const GlobalStyles = createGlobalStyle`
   }
   
   h1 {
-    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
     line-height: 1.25;
     margin:0 0 10px 0;
     font-weight: normal;
@@ -37,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
 
   h3 {
     font-weight: normal;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
   }
 
@@ -47,6 +48,11 @@ const GlobalStyles = createGlobalStyle`
 
   .bold {
     font-weight: bold;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
   }
 
 `;
@@ -64,13 +70,19 @@ function App() {
       <GlobalStyles />
       <Header />
       <Announcement />
-      <Hero />
-      <PartnerStrip />
-      <Section />
-      <HowItWorks />
-      <Partnerships />
-      <Team />
-      <LearnMore />
+      <HeroBanner />
+      <Element name="section1">
+        <ProductIntro />
+      </Element>
+      <Element name="section2">
+        <Features />
+      </Element>
+      <Element name="section3">
+        <Partnership />
+      </Element>
+      <Element name="section4">
+        <Team />
+      </Element>
       <Footer />
     </AppContainer>
   );

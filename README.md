@@ -1,44 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Arboreum Website
 
-## Available Scripts
+Homepage for Arboreum Website
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+To see the full documentation regarding that, go [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md). The salient points are reproduced below, along with important custom setup documentation.
+
+## Installation
+
+This project uses `yarn`. Install it as described here [https://yarnpkg.com/lang/en/](https://yarnpkg.com/lang/en/) if you haven't already.
+
+To install this project, simply clone the repo and run `yarn`;
+
+e.g.
+
+    git clone https://github.com/mustafasaifee42/arboreum.git
+    cd arboreum
+    yarn
+
+This will install all the dependencies for the project locally.
+
+## Local Development
 
 In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-### `yarn test`
+## Deployement
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The website has a continuous integration using netlify. Any changes that are pushed to the master branch will automatically be deployed to the production.
 
-### `yarn build`
+## Editing or Changes to the Website
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To do any edit to the website first install the website locally. Do the changes locally and test it locally using `yarn start`. Once you are the satified with the changes and there are no bugs or errors push the changes to master branch and the wbesite (with the changes will be deployed automatically)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Pushing the changes to master
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+First add all the untracked and modified file to the staging area. For that you can run:
 
-### `yarn eject`
+#### `git add .`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This will add all the untracked files to staging. You can add individual files to the stging area by using:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `git add <filenames>`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_For example `git add file1.js image.png index.html` to add only `file1.js`, `image.png` and `index.html` to the staging area_
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Then you will have to commit all the changes to local branch using:
 
-## Learn More
+#### `git commit -m "<your commit message>"`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Commit message helps in tracking the changes in the project which can be useful when working in a team.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can also combine the add and commit step using:
+
+#### ``git commit -am "<your commit message>"`
+
+Now you are ready to push the commits to master. For that you can use:
+
+#### `git push -u origin master`
+
+or
+
+If you working on the master branch locally
+
+#### `git push`

@@ -15,7 +15,6 @@ const DivBG = styled.div`
 
 const DivContainer = styled.div<BGProps>`
   margin: 0 auto;
-  width: 100%;
   max-width: 1440px;
   z-index: 10;
   position: relative;
@@ -24,6 +23,10 @@ const DivContainer = styled.div<BGProps>`
   justify-content: center;
   padding: 150px 20px;
   margin-top: -${(props: BGProps) => props.height}px;
+
+  @media (max-width: 990px) {
+    padding: 100px 20px;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -79,12 +82,11 @@ const Map: React.FunctionComponent<{}> = () => {
 
     canvasNode.width = width;
     canvasNode.height = height;
-
-    var tau = 2 * Math.PI,
-      n = 200,
+    let tau = 2 * Math.PI,
+      n = Math.round(width / 10),
       particles = new Array(n);
 
-    for (var i = 0; i < n; ++i) {
+    for (let i = 0; i < n; ++i) {
       particles[i] = {
         x: Math.random() * width,
         y: Math.random() * height,

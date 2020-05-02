@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const DivContainer = styled.div`
   margin: 0 auto;
-  width: 100%;
-  margin: 20px 0;
-  max-width: 340px;
-  min-width: 320px;
+  margin: 20px;
+  min-width: 240px;
+  flex: 1 1 calc(33% - 80px);
   background-color: #fff;
   padding: 20px;
   font-size: 16px;

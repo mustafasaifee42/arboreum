@@ -4,14 +4,14 @@ import LinkedinLogo from "./assets/imgs/Linkedin.svg";
 
 const DivContainer = styled.div`
   margin: 0 auto;
-  width: 100%;
-  margin: 20px 0;
-  max-width: 340px;
-  min-width: 320px;
+  margin: 20px;
   background-color: #fff;
   padding: 20px 20px 40px 20px;
+  min-width: 240px;
+  flex: 1 1 calc(33% - 80px);
   font-size: 16px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.11);
+  &
 `;
 
 const ImageContainer = styled.div`

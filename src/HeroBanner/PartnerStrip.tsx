@@ -9,13 +9,11 @@ interface partnerData {
 }
 
 const PartnerStrip = styled.div`
-  margin: 0 auto;
-  width: 100%;
   background-color: #fafafa;
+  width: 100%;
 `;
 const DivContainer = styled.div`
   margin: 0 auto;
-  width: 100%;
   max-width: 1440px;
   display: flex;
   align-items: center;

@@ -2,11 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const DivContainer = styled.div`
-  width: 100%;
-  max-width: 340px;
-  min-width: 320px;
+  flex: 1 1 calc(33% - 80px);
   background-color: #fff;
-  padding: 0 40px;
+  margin: 0 20px;
   font-size: 16px;
 `;
 

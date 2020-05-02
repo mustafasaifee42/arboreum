@@ -10,7 +10,6 @@ interface announcementData {
 const AnnouncementData: announcementData = require("./assets/data/copy.json");
 
 const DivContainer = styled.div`
-  margin: 0 auto;
   width: 100%;
   font-size: 24px;
   color: #fff;
@@ -30,7 +29,6 @@ const P = styled.p`
 `;
 
 const DivBorder = styled.div`
-  width: 100%;
   height: 10px;
   background-image: linear-gradient(
     90deg,

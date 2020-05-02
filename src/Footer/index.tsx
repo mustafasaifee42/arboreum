@@ -38,21 +38,21 @@ const SMIcon = styled.img`
 const DivContainer = styled.div`
   margin: 0 auto;
   max-width: 1272px;
-  width: 100%;
   padding: 75px 20px;
 `;
 
 const H2 = styled.h2`
   font-weight: normal;
   margin-bottom: 0px;
+  font-family: "Raleway", sans-serif;
   text-align: center;
 `;
 
 const H3 = styled.h3`
-  font-size: 24px;
   margin-top: 5px;
   margin-bottom: 0;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 `;
 
 const Button = styled.div`
@@ -84,7 +84,6 @@ const Line = styled.div`
   height: 1px;
   background-color: #fff;
   opacity: 0.2;
-  widht: 1005;
 `;
 const Map: React.FunctionComponent<{}> = () => {
   const SM = SMData.map((d: SMType, i: number) => {

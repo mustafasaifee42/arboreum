@@ -55,13 +55,18 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
   }
 
+  @media (max-width: 880px) {
+    
+    h1 {
+      font-size: 36px;
+    }
+  }
 `;
 
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 100%;
 `;
 
 function App() {

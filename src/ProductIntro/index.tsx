@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import YouTube from "react-youtube";
 import Icon from "./assets/imgs/fractalIcon.svg";
@@ -9,7 +9,6 @@ interface H3Props {
 
 const DivContainer = styled.div`
   margin: 0 auto;
-  width: 100%;
   max-width: 1440px;
   padding: 80px 20px 100px 20px;
 `;
@@ -52,10 +51,13 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 960px;
+  min-width: 320px;
+  flex: 1 1 100%;
+  max-width: 960px;
 `;
 
 const Card = styled.div`
+  flex: 0 1 calc(50% - 25px);
   max-width: 460px;
   font-size: 20px;
 `;
@@ -64,9 +66,11 @@ const CardContent = styled.div`
   padding: 30px 20px 10px 20px;
   background-color: #fff;
   font-size: 18px;
+  align-items: stretch;
   box-shadow: 0 0px 13px -3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: all 0.5s ease;
+  height: calc(100% - 40px);
   &:hover {
     box-shadow: 0 0px 13px 0px rgba(0, 0, 0, 0.3);
   }
@@ -87,13 +91,11 @@ const CardTitle = styled.div`
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
-  const opts: any = {
-    height: "520",
-    width: "880",
-    playerVars: {
-      autoplay: 0,
-    },
+  const [windowWidthValue, setWindowWidthValue] = useState(window.innerWidth);
+  window.onresize = () => {
+    setWindowWidthValue(window.innerWidth);
   };
+  const width = windowWidthValue > 1000 ? 880 : windowWidthValue - 140;
   return (
     <DivContainer>
       <IconConatiner>
@@ -110,12 +112,12 @@ const Map: React.FunctionComponent<{}> = () => {
         </h3>
       </TitleContainer>
       <CardContainer>
-        <a
-          href="./assets/pdfFiles/PitchDeck.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Card>
+        <Card>
+          <a
+            href="./assets/pdfFiles/PitchDeck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CardContent>
               <CardTitle align="left">Pitch Deck</CardTitle>
               <P>
@@ -123,14 +125,14 @@ const Map: React.FunctionComponent<{}> = () => {
                 our overall business strategy
               </P>
             </CardContent>
-          </Card>
-        </a>
-        <a
-          href="./assets/pdfFiles/WhitePaper.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Card>
+          </a>
+        </Card>
+        <Card>
+          <a
+            href="./assets/pdfFiles/WhitePaper.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CardContent>
               <CardTitle align="left">Whitepaper</CardTitle>
               <P>
@@ -138,12 +140,21 @@ const Map: React.FunctionComponent<{}> = () => {
                 that power our solution
               </P>
             </CardContent>
-          </Card>
-        </a>
+          </a>
+        </Card>
       </CardContainer>
       <VideoConatiner>
         <H3 align="center">See how it works</H3>
-        <YouTube videoId="WzBimNSO-U8" opts={opts} />
+        <YouTube
+          videoId="WzBimNSO-U8"
+          opts={{
+            height: `${(width * 520) / 800}`,
+            width: `${width}`,
+            playerVars: {
+              autoplay: 0,
+            },
+          }}
+        />
       </VideoConatiner>
     </DivContainer>
   );

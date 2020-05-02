@@ -14,13 +14,11 @@ interface members {
 
 const HowItworksContainer = styled.div`
   margin: 0 auto;
-  width: 100%;
   background-color: #fafafa;
 `;
 
 const DivContainer = styled.div`
   margin: 0 auto;
-  width: 100%;
   max-width: 1272px;
   padding: 120px 20px 50px 20px;
 `;
@@ -30,7 +28,6 @@ const TitleContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  width: 100%;
   flex-wrap: wrap;
 `;
 
@@ -53,7 +50,7 @@ const TeamContainer = styled.div`
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin: 0 -20px 40px -20px;
 `;
 
 const Map: React.FunctionComponent<{}> = () => {

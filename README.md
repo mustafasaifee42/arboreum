@@ -41,11 +41,13 @@ This will install all the dependencies for the project locally.
 In the project directory, you can run:
 
 ### `yarn start`
+
 (if using yarn)
 
 or
 
 ### `npm run start`
+
 (if using npm)
 
 Runs the app in the development mode.
@@ -93,3 +95,111 @@ or
 If you working on the master branch locally
 
 #### `git push`
+
+### Changing Copy
+
+#### Announcement
+
+To edit or change the announcement bar at the top edit the [`copy.json`](./src/Announecement/assets/data/copy.json) in [`./src/Announecement/assets/data`](./src/Announecement/assets/data)
+
+**Data Structure**
+
+```javascript
+{
+  "announcement": string, // if announcement key is not present then the annoucement bar wont appear. Required
+  "logo": string, // path of logo or image that appear after the text. The image should be uploaded in the public folder. For ex. an image named img.jpg in assets folder in public folder can be linked using the path here "./assets/img.jpg". Not compulsary
+  "link": string // if the announcement need to be linked to another web page. Not compulsary
+}
+```
+
+### Partner Strip under the Hero Banner
+
+To add or remove partners from this strip edit the [`partners.json`](./src/HeroBanner/assets/data/partners.json) in [`./src/HeroBanner/assets/data`](./src/HeroBanner/assets/data)
+
+**Data Structure**
+
+```javascript
+[
+  {
+    "link": string, // link to the webpage of the partner. Required
+    "logo": string, // path of logo of the partner. The image should be uploaded in the public folder. For ex. an image named img.jpg in assets folder in public folder can be linked using the path here "./assets/img.jpg". Required
+    "altText": string // Alternate text for accesibility. Required
+  },
+...
+]
+```
+
+### Feature Section
+
+To add, remove or edit feature cards, edit the [`copy.json`](./src/Features/assets/data/copy.json) in [`./src/Features/assets/data`](./src/Features/assets/data)
+
+**Data Structure**
+
+```javascript
+[
+  {
+    "icon": string, // path of icon for the feature (preferabbly the aspect ration should be the same). The image should be uploaded in the public folder. For ex. an image named img.jpg in assets folder in public folder can be linked using the path here "./assets/img.jpg". Required
+    "title": string, // Title of the feature. Required
+    "description": string // Description of the feature. Required
+  },
+...
+]
+```
+
+### Partnership Section
+
+To add, remove or edit partnership cards, edit the [`copy.json`](./src/Partnership/assets/data/copy.json) in [`./src/Partnership/assets/data`](./src/Partnership/assets/data)
+
+**Data Structure**
+
+```javascript
+[
+  {
+    "icon": string, // path of icon for the feature (preferabbly the aspect ration should be the same). The image should be uploaded in the public folder. For ex. an image named img.jpg in assets folder in public folder can be linked using the path here "./assets/img.jpg". Required
+    "title": string, // Title of the feature. Required
+    "description": string // Description of the feature. Required
+  },
+...
+]
+```
+
+### Teams Section
+
+Team section is divided in 2 part
+
+- Leadership Team
+- Advisory
+
+To add, remove or edit leadership team cards, edit the [`team.json`](./src/Team/assets/data/team.json) in [`./src/Team/assets/data`](./src/Team/assets/data) and to edit advisory team cards, edit the [`advisory.json`](./src/Team/assets/data/advisory.json) in [`./src/Team/assets/data`](./src/Team/assets/data)
+
+**Data Structure**
+
+```javascript
+[
+  {
+    "name": string, // Name of the team member. Required
+    "position": string, // Designation of the team member. Required
+    "description": string, // Details of the team member. Required
+    "linkedin": string, // Linkedin profile link. Not compulsary
+    "photo": string, // Photograph of the team member (preferabbly the aspect ration should be 1:1). The image should be uploaded in the public folder. For ex. an image named img.jpg in assets folder in public folder can be linked using the path here "./assets/img.jpg". Required
+  },
+...
+]
+```
+
+### Social Media in the Footer
+
+To add, remove or edit social media links in the foote, edit the [`sm.json`](./src/Footer/assets/data/sm.json) in [`./src/Footer/assets/data`](./src/Footer/assets/data)
+
+**Data Structure**
+
+```javascript
+[
+  {
+    "socialMedia": string, // Name of the social media this json object refer to. Required
+    "icon": string, // PIcon for the social media (preferabbly the aspect ration should be 1:1). The image should be uploaded in the public folder. For ex. an image named img.jpg in assets folder in public folder can be linked using the path here "./assets/img.jpg". Required
+    "link": string, // Link to the social media page. Required
+  },
+...
+]
+```

@@ -60,7 +60,7 @@ Commit message helps in tracking the changes in the project which can be useful 
 
 You can also combine the add and commit step using:
 
-#### ``git commit -am "<your commit message>"`
+#### `git commit -am "<your commit message>"`
 
 Now you are ready to push the commits to master. For that you can use:
 

@@ -1,19 +1,12 @@
 [{
-    "name": "Dr Mack Ramachandran",
-    "position": "Senior Advisor",
-    "description": "Mack is an entrepreneur and an early carbon offset business owner",
-    "linkedin": "https://www.linkedin.com/in/mahamack/",
-    "photo": "./assets/imgs/MR.jpg"
-  },
-  {
     "name": "Dr Avinash Bhardwaj",
     "position": "Technical Advisor",
-    "description": "Avinash is a member of the faculty at IIT - Bombay",
+    "description": "Avinash is a PhD in operations research from UC Berkeley, and is currently a faculty member at the India Institute of Technology - Bombay",
     "photo": "./assets/imgs/AB.jpg"
   },
   {
     "name": "Shubham Sandeep",
-    "position": "Comercial Advisor",
+    "position": "Commercial Advisor",
     "description": "Shubham is a member of the 2019 Forbes 30 Under 30 cohort for Manufacturing & Industry, and the CCO of Skytree",
     "linkedin": "https://nl.linkedin.com/in/shubham-sandeep-2980b416",
     "photo": "./assets/imgs/SS.jpg"

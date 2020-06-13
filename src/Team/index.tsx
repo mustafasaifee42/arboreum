@@ -85,8 +85,8 @@ const Map: React.FunctionComponent<{}> = () => {
           <h1>A Team of Experts</h1>
           <TitleOutline />
           <h3>
-            Arboreum leadership team brings years of experience in economics,
-            data science, blockchain technology and management consultancy
+            The Arboreum leadership team combines years of world-class experience in economics,
+            data science, blockchain technology and management consultancy.
           </h3>
         </TitleContainer>
         <ContentContainer>

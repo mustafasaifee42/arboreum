@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import YouTube from "react-youtube";
 import Icon from "./assets/imgs/fractalIcon.svg";
 
 interface H3Props {
@@ -29,14 +28,6 @@ const IconConatiner = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px 0;
-`;
-
-const VideoConatiner = styled.div`
-  padding: 0 40px 40px 40px;
-  border-radius: 5px;
-  width: max-content;
-  margin: auto;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.11);
 `;
 
 const H3 = styled.h3<H3Props>`
@@ -136,26 +127,13 @@ const Map: React.FunctionComponent<{}> = () => {
             <CardContent>
               <CardTitle align="left">Whitepaper</CardTitle>
               <P>
-                Learn more about the underlying concepts and technical detials
+                Learn more about the underlying concepts and technical details
                 that power our solution
               </P>
             </CardContent>
           </a>
         </Card>
       </CardContainer>
-      <VideoConatiner>
-        <H3 align="center">See how it works</H3>
-        <YouTube
-          videoId="WzBimNSO-U8"
-          opts={{
-            height: `${(width * 520) / 800}`,
-            width: `${width}`,
-            playerVars: {
-              autoplay: 0,
-            },
-          }}
-        />
-      </VideoConatiner>
     </DivContainer>
   );
 };

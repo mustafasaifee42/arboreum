@@ -1,31 +1,31 @@
 [{
-    "title": "Near zero transaction fee",
-    "description": "Philadelphia cream cheese",
+    "title": "Highly diversified portfolio",
+    "description": "As loans are de-risked over a network, each lender enjoys a diversified basket of smaller loans",
     "icon": "./assets/imgs/featureIcons/feature1.svg"
   },
   {
-    "title": "High collaterals on loans",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "title": "Strong reinforcement mechanism",
+    "description": "As borrower's social trustors are involved in the loan, there is a significant barrier to defaulting",
     "icon": "./assets/imgs/featureIcons/feature2.svg"
   },
   {
-    "title": "Best risk-adjusted returns",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "title": "Optimized interest rates",
+    "description": "Technology can be configured to give best possible interest rate for borrowers, or lenders, based on context",
     "icon": "./assets/imgs/featureIcons/feature3.svg"
   },
   {
-    "title": "Strong enforcement mechanism",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "title": "Works without traditional risk data",
+    "description": "Formalizing lending based on societal trust allows inclusion of those marginalized by traditional risk models",
     "icon": "./assets/imgs/featureIcons/feature4.svg"
   },
   {
-    "title": "Easy to use",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "title": "Highly secure loans",
+    "description": "A borrower's network acts as a guarantor, and can be configured to layer on even more guarantee",
     "icon": "./assets/imgs/featureIcons/feature5.svg"
   },
   {
-    "title": "Diversified portfolio",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus lectus vitae tortor pulvinar tincidunt.",
+    "title": "Very low transaction cost",
+    "description": "Algorithmized underwriting and DLT-enabled disbursal and collection ensures low transaction cost",
     "icon": "./assets/imgs/featureIcons/feature6.svg"
   }
 ]

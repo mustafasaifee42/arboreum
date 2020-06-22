@@ -55,8 +55,8 @@ const Map: React.FunctionComponent<{}> = () => {
         <TitleContainer>
           <h1>Partnerships</h1>
           <h3>
-            We partner with businesses, financial institutes, and NGOs to build
-            a wide range of smartphone-enabled credit inclusion products
+            We partner with lending institutions, businesses, and financial inclusion NGOs to build
+            a wide range of digitized credit inclusion products for their customers, supply chain SMEs, and employees
           </h3>
         </TitleContainer>
         <ContentContainer>{PartnershipsCards}</ContentContainer>

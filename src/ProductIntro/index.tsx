@@ -95,11 +95,11 @@ const Map: React.FunctionComponent<{}> = () => {
       <TitleContainer>
         <h1>World’s first fractal lending technology</h1>
         <h3>
-          Through fractal lending, borrowing, and underwriting, we spread loan
-          risk across networks of businesses or individuals. As every lender’s
-          risk lowers, it becomes easier for financially marginalized borrowers
-          to access credit. Long chains of people in the network help credit
-          move farther
+          Our technology derisks loans by spreading them 
+          across a network of trusted lenders, enabling 
+          safer lending and more affordable and accessible borrowing.
+          Networks are built on the basis of societal trust, making 
+          borrowing viable even for the financially underserved.
         </h3>
       </TitleContainer>
       <CardContainer>

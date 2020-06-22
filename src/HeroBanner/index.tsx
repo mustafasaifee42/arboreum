@@ -149,8 +149,7 @@ const Map: React.FunctionComponent<{}> = () => {
             <H1>Grow your business with network lending</H1>
             <Motif fillColor="#fff" />
             <H3>
-              Arboreum enables new, network-based credit access solutions that
-              empower the financially underserved
+              Arboreum's product is a network-based lending technology that enables alternative lending solutions
             </H3>
             <ButtonBlock>
               <a

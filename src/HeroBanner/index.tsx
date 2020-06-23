@@ -33,6 +33,7 @@ const TextContainer = styled.div`
   margin: 0 40px 0 0;
 `;
 
+/* 
 const ButtonBlock = styled.div`
   display: flex;
   justify-content: center;
@@ -52,6 +53,7 @@ const Button = styled.div`
     background-color: #ed135a;
   }
 `;
+*/
 
 const H1 = styled.h1`
   color: #ffffff;
@@ -146,21 +148,11 @@ const Map: React.FunctionComponent<{}> = () => {
         <canvas ref={(node) => (canvasNode = node)} />
         <DivContainer height={582}>
           <TextContainer>
-            <H1>Grow your business with network lending</H1>
+            <H1>Making Credit Accessible For All</H1>
             <Motif fillColor="#fff" />
             <H3>
-              Arboreum enables new, network-based credit access solutions that
-              empower the financially underserved
+              Arboreum is building the future of credit for the digital economy via AI-driven network-based lending technology.
             </H3>
-            <ButtonBlock>
-              <a
-                href="mailto:gaurav@arboreum.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button>Request Demo</Button>
-              </a>
-            </ButtonBlock>
           </TextContainer>
         </DivContainer>
       </DivBG>

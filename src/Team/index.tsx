@@ -82,15 +82,15 @@ const Map: React.FunctionComponent<{}> = () => {
     <HowItworksContainer>
       <DivContainer>
         <TitleContainer>
-          <h1>A Team of Experts</h1>
+          <h1>Led By A Team Of Experts</h1>
           <TitleOutline />
           <h3>
-            The Arboreum leadership team combines years of world-class experience in economics,
-            data science, blockchain technology and management consultancy.
+            The Arboreum leadership and advisory board combines years of world-class experience in econometrics,
+            data science, mathematics, blockchain technology, program verification and management consultancy.
           </h3>
         </TitleContainer>
         <ContentContainer>
-          <H4>Leadership Team</H4>
+          <H4>Leadership</H4>
           <TeamContainer>{teamCards}</TeamContainer>
         </ContentContainer>
         <ContentContainer>

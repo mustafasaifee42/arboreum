@@ -1,16 +1,16 @@
 [{
-        "title": "Network Lending",
-        "description": "Network participants lend to one another, no active involvement from partnering microfinance institution",
+        "title": "Guarantor Networks",
+        "description": "Provide safer, larger institutional loans by building networks that act as guarantors for borrowers.",
         "image": "./assets/imgs/partnershipImages/01.png"
     },
     {
-        "title": "Collateralised Principal",
-        "description": "Institutional lender provides full principal to borrower, borrower obtains collateral from network",
+        "title": "Co-lender Networks",
+        "description": "De-risk institutional lending by building networks that act as guarantors and provide partial loan principal.",
         "image": "./assets/imgs/partnershipImages/02.png"
     },
     {
-        "title": "Partial Principal",
-        "description": "Lender can provide part of the principal to a borrower, the wider social network of a borrower provides the rest",
+        "title": "Independent Networks",
+        "description": "Set up independent networks of communities that wholly lend to and borrow from each other.",
         "image": "./assets/imgs/partnershipImages/03.png"
     }
 ]

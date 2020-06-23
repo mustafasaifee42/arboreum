@@ -30,13 +30,6 @@ const IconConatiner = styled.div`
   margin: 20px 0;
 `;
 
-const H3 = styled.h3<H3Props>`
-  font-weight: bold;
-  text-align: ${(props: H3Props) => props.align};
-  margin: 20px 0;
-  padding-top: 20px;
-`;
-
 const CardContainer = styled.div`
   margin: 25px auto 50px auto;
   display: flex;
@@ -82,38 +75,39 @@ const CardTitle = styled.div`
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
+  // eslint-disable-next-line 
   const [windowWidthValue, setWindowWidthValue] = useState(window.innerWidth);
   window.onresize = () => {
     setWindowWidthValue(window.innerWidth);
   };
-  const width = windowWidthValue > 1000 ? 880 : windowWidthValue - 140;
   return (
     <DivContainer>
       <IconConatiner>
         <LogoImage src={Icon} alt="Fractal Lending Icon" />
       </IconConatiner>
       <TitleContainer>
-        <h1>World’s first fractal lending technology</h1>
+        <h1>Introducing the world’s first fractal lending technology.</h1>
         <h3>
-          Through fractal lending, borrowing, and underwriting, we spread loan
-          risk across networks of businesses or individuals. As every lender’s
-          risk lowers, it becomes easier for financially marginalized borrowers
-          to access credit. Long chains of people in the network help credit
-          move farther
+          Our technology de-risks loans by spreading principal 
+          across networks of trusted lenders, enabling both
+          safer lending and more affordable borrowing.
+          <p></p>
+          Arboreum networks are built on the basis of societal trust, making 
+          credit access possible even for the financially underserved.
         </h3>
       </TitleContainer>
       <CardContainer>
         <Card>
           <a
-            href="./assets/pdfFiles/PitchDeck.pdf"
+            href="mailto:enquiries@arboreum.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
             <CardContent>
-              <CardTitle align="left">Pitch Deck</CardTitle>
+              <CardTitle align="left">Request Pitchdeck</CardTitle>
               <P>
-                Learn more about the challenge we face, our novel solution, and
-                our overall business strategy
+                Learn more about the challenges we face, our novel solution, and
+                our overall business strategy.
               </P>
             </CardContent>
           </a>
@@ -127,8 +121,8 @@ const Map: React.FunctionComponent<{}> = () => {
             <CardContent>
               <CardTitle align="left">Whitepaper</CardTitle>
               <P>
-                Learn more about the underlying concepts and technical details
-                that power our solution
+                Learn more about the technical concepts and details
+                that power our solution. [<i>Evolving Document</i>]
               </P>
             </CardContent>
           </a>

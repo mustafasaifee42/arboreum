@@ -56,7 +56,7 @@ const Map: React.FunctionComponent<{}> = () => {
       <DivContainer>
         <TitleContainer>
           <h1>
-            Our Technology enables Safe, Affordable {"&"} Inclusive Lending
+            Our technology enables safe, affordable {"&"} socially inclusive lending opportunities.
           </h1>
           <TitleOutline />
         </TitleContainer>

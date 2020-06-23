@@ -96,10 +96,10 @@ const Map: React.FunctionComponent<{}> = () => {
   return (
     <AppFooter>
       <DivContainer>
-        <H2>Ready to partner with us</H2>
+        <H2>Ready to partner with us?</H2>
         <H3>Get in touch to find out how we can help you.</H3>
         <a
-          href="mailto:gaurav@arboreum.dev"
+          href="mailto:enquiries@arboreum.dev"
           target="_blank"
           rel="noopener noreferrer"
         >

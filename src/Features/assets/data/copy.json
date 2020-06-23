@@ -1,31 +1,31 @@
 [{
-    "title": "Highly diversified portfolio",
-    "description": "As loans are de-risked over a network, each lender enjoys a diversified basket of smaller loans",
+    "title": "Highly diversified portfolios",
+    "description": "As loans are de-risked over a network, lenders benefit from a diversified basket of smaller loans.",
     "icon": "./assets/imgs/featureIcons/feature1.svg"
   },
   {
-    "title": "Strong reinforcement mechanism",
-    "description": "As borrower's social trustors are involved in the loan, there is a significant barrier to defaulting",
+    "title": "Strong repayment mechanism",
+    "description": "As borrower's direct trustors are most heavily exposed to a loan, there are significant social barriers to defaulting.",
     "icon": "./assets/imgs/featureIcons/feature2.svg"
   },
   {
-    "title": "Optimized interest rates",
-    "description": "Technology can be configured to give best possible interest rate for borrowers, or lenders, based on context",
+    "title": "Optimised interest rates",
+    "description": "Our framework can be configured to provide the best possible interest rates for either borrowers or lenders, depending on context.",
     "icon": "./assets/imgs/featureIcons/feature3.svg"
   },
   {
     "title": "Works without traditional risk data",
-    "description": "Formalizing lending based on societal trust allows inclusion of those marginalized by traditional risk models",
+    "description": "Formalising lending based on societal trust enables the financial inclusion of those marginalised by traditional risk models.",
     "icon": "./assets/imgs/featureIcons/feature4.svg"
   },
   {
-    "title": "Highly secure loans",
-    "description": "A borrower's network acts as a guarantor, and can be configured to layer on even more guarantee",
+    "title": "Highly secured loans",
+    "description": "A borrower's network acts as a set of guarantors, and guarantors can increase collateral to further distribute loan principal.",
     "icon": "./assets/imgs/featureIcons/feature5.svg"
   },
   {
-    "title": "Very low transaction cost",
-    "description": "Algorithmized underwriting and DLT-enabled disbursal and collection ensures low transaction cost",
+    "title": "Very low transaction costs",
+    "description": "Algorithmic underwriting and DLT-enabled disbursal and collection processes ensure minuscule transaction costs.",
     "icon": "./assets/imgs/featureIcons/feature6.svg"
   }
 ]

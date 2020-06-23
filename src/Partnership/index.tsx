@@ -55,9 +55,14 @@ const Map: React.FunctionComponent<{}> = () => {
         <TitleContainer>
           <h1>Partnerships</h1>
           <h3>
-            We partner with lending institutions, businesses, and financial inclusion NGOs to build
-            a wide range of digitized credit inclusion products for their customers, supply chain SMEs, and employees
+            We partner with lending institutions, businesses, and financial inclusion NGOs to provide
+            a wide, customisable range of digitised credit inclusion platforms serving - for example - customers, supply chain SMEs, and employees.
           </h3>
+        </TitleContainer>
+        <TitleContainer>
+        <h3>
+          Example applications of our technology include:
+        </h3>
         </TitleContainer>
         <ContentContainer>{PartnershipsCards}</ContentContainer>
       </DivContainer>

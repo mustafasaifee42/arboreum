@@ -1,21 +1,21 @@
 [{
     "name": "Gaurav Singhal",
     "position": "Chief Executive Officer",
-    "description": "Gaurav is a versatile data scientist, and was previously Lead Data Scientist at the United Nations World Food Programme",
+    "description": "Gaurav holds joint MSc degrees in Economics and Information Science from Michigan, and was previously the inaugural Lead Data Scientist at the United Nations World Food Programme.",
     "linkedin": "https://www.linkedin.com/in/gaurav-singhal-14311229/",
     "photo": "./assets/imgs/GS.jpg"
   },
   {
-    "name": "Dr Laurence E. Day",
+    "name": "Dr. Laurence E. Day",
     "position": "Chief Technology Officer",
-    "description": "Laurence is a Computer Science PhD from the University of Nottingham, and a software engineer specialising in functional programming and program correctness",
+    "description": "Laurence holds a PhD in Computer Science PhD from Nottingham, and was previously a risk analytics software engineer at Standard Chartered Bank specialising in functional programming.",
     "linkedin": "https://www.linkedin.com/in/laurenceday/",
     "photo": "./assets/imgs/LD.jpg"
   },
   {
     "name": "Nupur Joshi",
     "position": "Chief Operations Officer",
-    "description": "Nupur is an ex-McKinsey & Company consultant with an MBA from The Wharton School",
+    "description": "Nupur holds an MBA from Wharton, and was previously a McKinsey & Company multi-stakeholder strategy and operational transformation consultant.",
     "linkedin": "https://www.linkedin.com/in/nupur-joshi-167b6226/",
     "photo": "./assets/imgs/NJ.jpg"
   }

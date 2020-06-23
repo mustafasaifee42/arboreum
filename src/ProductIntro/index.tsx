@@ -93,27 +93,28 @@ const Map: React.FunctionComponent<{}> = () => {
         <LogoImage src={Icon} alt="Fractal Lending Icon" />
       </IconConatiner>
       <TitleContainer>
-        <h1>World’s first fractal lending technology</h1>
+        <h1>Introducing the world’s first fractal lending technology.</h1>
         <h3>
-          Our technology derisks loans by spreading them 
-          across a network of trusted lenders, enabling 
-          safer lending and more affordable and accessible borrowing.
-          Networks are built on the basis of societal trust, making 
-          borrowing viable even for the financially underserved.
+          Our technology de-risks loans by spreading principal 
+          across networks of trusted lenders, enabling both
+          safer lending and more affordable borrowing.
+          <p></p>
+          Arboreum networks are built on the basis of societal trust, making 
+          credit access possible even for the financially underserved.
         </h3>
       </TitleContainer>
       <CardContainer>
         <Card>
           <a
-            href="./assets/pdfFiles/PitchDeck.pdf"
+            href="mailto:enquiries@arboreum.dev"
             target="_blank"
             rel="noopener noreferrer"
           >
             <CardContent>
-              <CardTitle align="left">Pitch Deck</CardTitle>
+              <CardTitle align="left">Request Pitchdeck</CardTitle>
               <P>
-                Learn more about the challenge we face, our novel solution, and
-                our overall business strategy
+                Learn more about the challenges we face, our novel solution, and
+                our overall business strategy.
               </P>
             </CardContent>
           </a>
@@ -127,8 +128,8 @@ const Map: React.FunctionComponent<{}> = () => {
             <CardContent>
               <CardTitle align="left">Whitepaper</CardTitle>
               <P>
-                Learn more about the underlying concepts and technical details
-                that power our solution
+                Learn more about the technical concepts and details
+                that power our solution. [<i>Evolving Document</i>]
               </P>
             </CardContent>
           </a>

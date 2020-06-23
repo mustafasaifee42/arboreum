@@ -88,7 +88,7 @@ const Map: React.FunctionComponent<{}> = () => {
           </Link>
         </NavContainer>
         <a
-          href="mailto:gaurav@arboreum.dev"
+          href="mailto:enquiries@arboreum.dev"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,16 +1,16 @@
 [{
-        "title": "Build guarantor networks",
-        "description": "Provide safer, larger loans by building networks that act as guarantor for borrowers",
+        "title": "Guarantor Networks",
+        "description": "Provide safer, larger institutional loans by building networks that act as guarantors for borrowers.",
         "image": "./assets/imgs/partnershipImages/01.png"
     },
     {
-        "title": "Build co-lender networks",
-        "description": "De-risk institutional lending by building networks that fulfill part of the loan",
+        "title": "Co-lender Networks",
+        "description": "De-risk institutional lending by building networks that act as guarantors and provide partial loan principal.",
         "image": "./assets/imgs/partnershipImages/02.png"
     },
     {
-        "title": "Build independent networks",
-        "description": "Set up networks of communities that wholly lend to each other",
+        "title": "Independent Networks",
+        "description": "Set up independent networks of communities that wholly lend to and borrow from each other.",
         "image": "./assets/imgs/partnershipImages/03.png"
     }
 ]

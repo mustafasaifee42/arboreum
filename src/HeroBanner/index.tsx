@@ -33,6 +33,7 @@ const TextContainer = styled.div`
   margin: 0 40px 0 0;
 `;
 
+/* 
 const ButtonBlock = styled.div`
   display: flex;
   justify-content: center;
@@ -52,6 +53,7 @@ const Button = styled.div`
     background-color: #ed135a;
   }
 `;
+*/
 
 const H1 = styled.h1`
   color: #ffffff;

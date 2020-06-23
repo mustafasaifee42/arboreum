@@ -30,13 +30,6 @@ const IconConatiner = styled.div`
   margin: 20px 0;
 `;
 
-const H3 = styled.h3<H3Props>`
-  font-weight: bold;
-  text-align: ${(props: H3Props) => props.align};
-  margin: 20px 0;
-  padding-top: 20px;
-`;
-
 const CardContainer = styled.div`
   margin: 25px auto 50px auto;
   display: flex;
@@ -82,11 +75,11 @@ const CardTitle = styled.div`
 `;
 
 const Map: React.FunctionComponent<{}> = () => {
+  // eslint-disable-next-line 
   const [windowWidthValue, setWindowWidthValue] = useState(window.innerWidth);
   window.onresize = () => {
     setWindowWidthValue(window.innerWidth);
   };
-  const width = windowWidthValue > 1000 ? 880 : windowWidthValue - 140;
   return (
     <DivContainer>
       <IconConatiner>

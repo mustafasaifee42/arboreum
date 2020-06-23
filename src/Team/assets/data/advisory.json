@@ -1,7 +1,7 @@
 [{
     "name": "Dr. Avinash Bhardwaj",
     "position": "Technical Advisor",
-    "description": "Avinash holds a PhD in Operations Research from UC Berkeley, and currently a faculty member at the India Institute of Technology - Bombay.",
+    "description": "Avinash is currently a faculty member at the India Institute of Technology - Bombay, and holds a PhD in Operations Research from UC Berkeley.",
     "photo": "./assets/imgs/AB.jpg"
   },
   {
@@ -14,7 +14,7 @@
   {
     "name": "Prof. Igor Rivin",
     "position": "Mathematics Advisor",
-    "description": "Igor holds a PhD in Mathematics from Princeton, and is a former Regius Professor of Mathematics at the University of St. Andrews and co-creator of the CCi30 cryptocurrency market index.",
+    "description": "Igor is a former Regius Professor of Mathematics at the University of St. Andrews and co-creator of the CCi30 cryptocurrency market index, and holds a PhD in Mathematics from Princeton.",
     "linkedin": "https://www.linkedin.com/in/igor-rivin-6616aa4/",
     "photo": "./assets/imgs/IR.jpg"
   }

@@ -60,6 +60,9 @@ const Button = styled.div`
     color: #fff;
     background-color: #ed135a;
   }
+  @media (max-width: 420px) {
+    display: none;
+  }
 `;
 
 const Map: React.FunctionComponent<{}> = () => {

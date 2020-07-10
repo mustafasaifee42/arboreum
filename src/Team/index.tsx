@@ -9,7 +9,7 @@ interface members {
   position: string;
   description: string;
   linkedin?: string;
-  linkedinURL: string;
+  linkedinURL?: string;
   photo: string;
 }
 

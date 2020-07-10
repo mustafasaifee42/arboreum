@@ -53,7 +53,7 @@ const Map: React.FunctionComponent<{
   position: string;
   photo: string;
   linkedin?: string;
-  linkedinURL: string;
+  linkedinURL?: string;
 }> = (props) => {
   return (
     <DivContainer>

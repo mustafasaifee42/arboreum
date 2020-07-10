@@ -9,6 +9,7 @@
     "position": "Commercial Advisor",
     "description": "Shubham is a member of the 2019 Forbes 30 Under 30 cohort for Manufacturing & Industry, and the former CCO of Skytree.",
     "linkedin": "https://nl.linkedin.com/in/shubham-sandeep-2980b416",
+    "linkedinURL": "https://nl.linkedin.com/in/shubham-sandeep-2980b416",
     "photo": "./assets/imgs/SS.jpg"
   },
   {
@@ -16,6 +17,7 @@
     "position": "Mathematics Advisor",
     "description": "Igor is a former Regius Professor of Mathematics at the University of St. Andrews and co-creator of the CCi30 cryptocurrency market index, and holds a PhD in Mathematics from Princeton.",
     "linkedin": "https://www.linkedin.com/in/igor-rivin-6616aa4/",
+    "linkedinURL": "https://www.linkedin.com/in/igor-rivin-6616aa4/",
     "photo": "./assets/imgs/IR.jpg"
   }
 ]

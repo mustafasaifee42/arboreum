@@ -9,6 +9,7 @@ interface members {
   position: string;
   description: string;
   linkedin?: string;
+  linkedinURL: string;
   photo: string;
 }
 
@@ -62,6 +63,7 @@ const Map: React.FunctionComponent<{}> = () => {
         description={d.description}
         position={d.position}
         linkedin={d.linkedin}
+        linkedinURL={d.linkedinURL}
         photo={d.photo}
       />
     );
@@ -74,6 +76,7 @@ const Map: React.FunctionComponent<{}> = () => {
         description={d.description}
         position={d.position}
         linkedin={d.linkedin}
+        linkedinURL={d.linkedinURL}
         photo={d.photo}
       />
     );

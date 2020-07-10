@@ -64,11 +64,11 @@ const Map: React.FunctionComponent<{
         <H3>{props.name}</H3>
         <H4>{props.position}</H4>
         <p>{props.description}</p>
-        <a href = {props.linkedinURL} target="_blank">
+        
         {props.linkedin ? (
+        <a href = {props.linkedinURL} target="_blank">
           <LinkedIn src={LinkedinLogo} alt="Linkedin Icon" />
-        ) : null}
-        </a>
+        </a>) : null}
       </Div>
     </DivContainer>
   );

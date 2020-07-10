@@ -53,6 +53,7 @@ const Map: React.FunctionComponent<{
   position: string;
   photo: string;
   linkedin?: string;
+  linkedinURL?: string;
 }> = (props) => {
   return (
     <DivContainer>
@@ -63,9 +64,10 @@ const Map: React.FunctionComponent<{
         <H3>{props.name}</H3>
         <H4>{props.position}</H4>
         <p>{props.description}</p>
-        {props.linkedin ? (
-          <LinkedIn src={LinkedinLogo} alt="Linkedin Icon" />
-        ) : null}
+          {props.linkedin ? ( <> <a href = {props.linkedinURL} target="_blank" rel="noopener noreferrer">
+          <LinkedIn src={LinkedinLogo} alt="Linkedin Icon" /> </a>
+          </>) : null
+          }
       </Div>
     </DivContainer>
   );

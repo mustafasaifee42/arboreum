@@ -2,7 +2,8 @@
     "name": "Dr. Avinash Bhardwaj",
     "position": "Technical Advisor",
     "description": "Avinash is currently a faculty member at the India Institute of Technology - Bombay, and holds a PhD in Operations Research from UC Berkeley.",
-    "photo": "./assets/imgs/AB.jpg"
+    "photo": "./assets/imgs/AB.jpg",
+    "linkedinURL": "http://www.google.com"
   },
   {
     "name": "Shubham Sandeep",

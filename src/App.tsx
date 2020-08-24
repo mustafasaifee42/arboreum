@@ -20,6 +20,7 @@ import SectionOne from "./Components/Sections/SectionOne";
 import SectionTwo from "./Components/Sections/SectionTwo";
 import SectionThree from "./Components/Sections/SectionThree";
 import SectionFour from "./Components/Sections/SectionFour";
+import Separator from "./Components/Separator/Separator";
 
 
 const GlobalStyles = createGlobalStyle`
@@ -87,18 +88,12 @@ function App() {
           <GlobalStyles />
           <ColorNavbar />
           <HeroBanner />
-          <Element name="section2">
-              <SectionTwo/>
-          </Element>
-          {/*<Element name="section1">
-              <ProductIntro />
-          </Element>*/}
-          <Element name="section4">
-              <FeatureTwo />
-          </Element>
-          <Element name="section3">
-              <FeatureSix />
-          </Element>
+          <SectionTwo/>
+          <Separator/>
+          <FeatureTwo />
+          <Separator/>
+          <FeatureSix />
+          <Separator/>
           <FeatureFour />
           {/*<Element name="section1">
               <ProductIntro />

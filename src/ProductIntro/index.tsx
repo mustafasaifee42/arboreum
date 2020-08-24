@@ -61,7 +61,7 @@ const CardContent = styled.div`
   box-shadow: 0 0px 13px -3px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transition: all 0.5s ease;
-  height: calc(100% - 40px);
+  height: calc(100% - 10px);
   &:hover {
     box-shadow: 0 0px 13px 0px rgba(0, 0, 0, 0.3);
   }
@@ -103,7 +103,7 @@ const Map: React.FunctionComponent<{}> = () => {
           credit access possible even for the financially underserved.
         </h3>
       </TitleContainer>
-      <CardContainer>
+      {/*<CardContainer>
         <Card>
           <a
             href="mailto:enquiries@arboreum.dev"
@@ -112,7 +112,7 @@ const Map: React.FunctionComponent<{}> = () => {
           >
             <CardContent>
               <CardTitle align="left">Request Pitchdeck</CardTitle>
-              <P>
+              <P style={{color:"#000000"}}>
                 Learn more about the challenges we face, our novel solution, and
                 our overall business strategy.
               </P>
@@ -127,14 +127,14 @@ const Map: React.FunctionComponent<{}> = () => {
           >
             <CardContent>
               <CardTitle align="left">Whitepaper</CardTitle>
-              <P>
+              <P style={{color:"#000000"}}>
                 Learn more about the technical concepts and details that power
-                our solution. [<i>Evolving Document</i>]
+                our solution.
               </P>
             </CardContent>
           </a>
         </Card>
-      </CardContainer>
+      </CardContainer>*/}
     </DivContainer>
   );
 };
